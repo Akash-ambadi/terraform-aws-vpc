@@ -93,6 +93,21 @@ output "public_subnets" {
   value       = aws_subnet.public.*.id
 }
 
+output "public_subnet_1" {
+  description = "List of IDs of public subnet 1"
+  value       = aws_subnet.public.0.id
+}
+
+output "public_subnet_2" {
+  description = "List of IDs of public subnet 1"
+  value       = aws_subnet.public.1.id
+}
+
+output "public_subnet_3" {
+  description = "List of IDs of public subnet 1"
+  value       = aws_subnet.public.2.id
+}
+
 output "public_subnet_arns" {
   description = "List of ARNs of public subnets"
   value       = aws_subnet.public.*.arn
